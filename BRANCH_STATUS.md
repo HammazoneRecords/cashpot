@@ -4,7 +4,7 @@
 **Live domain:** `cashpot.mindwaveja.com` (not yet deployed)
 **VPS container:** `mw-cashpot` (planned — port 4002)
 **VPS port:** 4002
-**Repo:** Not yet created — `HammazoneRecords/cashpot` (planned)
+**Repo:** `HammazoneRecords/cashpot` (private, created 2026-11-06, main pushed)
 
 ---
 
@@ -12,7 +12,7 @@
 
 | Branch | Last Updated | Deployed? | Notes |
 |---|---|---|---|
-| main | 2026-06-24 | ⬜ Local only | Built this session, not yet on VPS |
+| main | 2026-11-06 | ⬜ Local only | On GitHub as of 2026-11-06 (commit `3bd1296`); not yet deployed to VPS |
 
 ## Last Action
 
