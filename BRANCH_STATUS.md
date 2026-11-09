@@ -4,7 +4,7 @@
 **Live domain:** `cashpot.mindwaveja.com` (not yet deployed)
 **VPS container:** `mw-cashpot` (planned — port 4002)
 **VPS port:** 4002
-**Repo:** `HammazoneRecords/cashpot` (private, created 2026-11-06, main pushed)
+**Repo:** `HammazoneRecords/cashpot` (public, created 2026-11-06, main pushed)
 
 ---
 
