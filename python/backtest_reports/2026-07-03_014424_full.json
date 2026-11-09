@@ -1,0 +1,2753 @@
+{
+  "config": {
+    "start_date": "2025-01-01",
+    "end_date": "2025-01-30",
+    "test_dates": 14,
+    "total_slots_1d": 76,
+    "total_slots_2d": 70,
+    "warmup_draws": 100,
+    "lookback": "all",
+    "runtime_seconds": 0.3
+  },
+  "engine_combined": {
+    "one_day": {
+      "hits": 3,
+      "total": 76,
+      "hit_rate": 3.9,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Midday": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        }
+      }
+    },
+    "two_day": {
+      "hits": 3,
+      "total": 70,
+      "hit_rate": 4.3,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        },
+        "Morning": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        },
+        "Midday": {
+          "hits": 2,
+          "total": 12,
+          "rate": 16.7
+        },
+        "Mid-Afternoon": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 11,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 11,
+          "rate": 0.0
+        }
+      }
+    },
+    "reversal": {
+      "hits": 8,
+      "total": 76,
+      "hit_rate": 10.5
+    },
+    "mirror": {
+      "hits": 9,
+      "total": 76,
+      "hit_rate": 11.8
+    },
+    "root_match": {
+      "hits": 15,
+      "total": 76,
+      "hit_rate": 19.7
+    },
+    "element_match": {
+      "hits": 22,
+      "rate": 28.9
+    },
+    "range_match": {
+      "hits": 25,
+      "rate": 32.9
+    },
+    "astro_match": {
+      "hits": 8,
+      "rate": 10.5
+    },
+    "ghost": {
+      "count": 0,
+      "rate": 0.0
+    }
+  },
+  "per_strategy_standalone": {
+    "S01-Freq": {
+      "hits": 6,
+      "total": 76,
+      "hit_rate": 7.9,
+      "reversal_hits": 9,
+      "reversal_rate": 11.8,
+      "mirror_hits": 5,
+      "mirror_rate": 6.6,
+      "root_matches": 19,
+      "root_rate": 25.0,
+      "element_matches": 20,
+      "element_rate": 26.3,
+      "range_matches": 29,
+      "range_rate": 38.2,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 42,
+      "ghost_rate": 55.3,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Midday": {
+          "hits": 3,
+          "total": 13,
+          "rate": 23.1
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        }
+      }
+    },
+    "S02-Cold": {
+      "hits": 8,
+      "total": 76,
+      "hit_rate": 10.5,
+      "reversal_hits": 6,
+      "reversal_rate": 7.9,
+      "mirror_hits": 2,
+      "mirror_rate": 2.6,
+      "root_matches": 26,
+      "root_rate": 34.2,
+      "element_matches": 52,
+      "element_rate": 68.4,
+      "range_matches": 23,
+      "range_rate": 30.3,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 33,
+      "ghost_rate": 43.4,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Morning": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Midday": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Mid-Afternoon": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 2,
+          "total": 12,
+          "rate": 16.7
+        }
+      }
+    },
+    "S03-HotStreak": {
+      "hits": 4,
+      "total": 76,
+      "hit_rate": 5.3,
+      "reversal_hits": 9,
+      "reversal_rate": 11.8,
+      "mirror_hits": 4,
+      "mirror_rate": 5.3,
+      "root_matches": 19,
+      "root_rate": 25.0,
+      "element_matches": 28,
+      "element_rate": 36.8,
+      "range_matches": 25,
+      "range_rate": 32.9,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 52,
+      "ghost_rate": 68.4,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Midday": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Mid-Afternoon": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Drivetime": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        },
+        "Evening": {
+          "hits": 2,
+          "total": 12,
+          "rate": 16.7
+        }
+      }
+    },
+    "S04-ColdStreak": {
+      "hits": 4,
+      "total": 76,
+      "hit_rate": 5.3,
+      "reversal_hits": 8,
+      "reversal_rate": 10.5,
+      "mirror_hits": 6,
+      "mirror_rate": 7.9,
+      "root_matches": 27,
+      "root_rate": 35.5,
+      "element_matches": 38,
+      "element_rate": 50.0,
+      "range_matches": 24,
+      "range_rate": 31.6,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 51,
+      "ghost_rate": 67.1,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Midday": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Mid-Afternoon": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Drivetime": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        },
+        "Evening": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        }
+      }
+    },
+    "S05-Momentum": {
+      "hits": 5,
+      "total": 76,
+      "hit_rate": 6.6,
+      "reversal_hits": 6,
+      "reversal_rate": 7.9,
+      "mirror_hits": 5,
+      "mirror_rate": 6.6,
+      "root_matches": 30,
+      "root_rate": 39.5,
+      "element_matches": 32,
+      "element_rate": 42.1,
+      "range_matches": 27,
+      "range_rate": 35.5,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 48,
+      "ghost_rate": 63.2,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Morning": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Midday": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        },
+        "Evening": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        }
+      }
+    },
+    "S07-Gap": {
+      "hits": 3,
+      "total": 76,
+      "hit_rate": 3.9,
+      "reversal_hits": 8,
+      "reversal_rate": 10.5,
+      "mirror_hits": 5,
+      "mirror_rate": 6.6,
+      "root_matches": 15,
+      "root_rate": 19.7,
+      "element_matches": 32,
+      "element_rate": 42.1,
+      "range_matches": 23,
+      "range_rate": 30.3,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 41,
+      "ghost_rate": 53.9,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Morning": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Midday": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        }
+      }
+    },
+    "S09-Cycle": {
+      "hits": 4,
+      "total": 76,
+      "hit_rate": 5.3,
+      "reversal_hits": 5,
+      "reversal_rate": 6.6,
+      "mirror_hits": 11,
+      "mirror_rate": 14.5,
+      "root_matches": 21,
+      "root_rate": 27.6,
+      "element_matches": 34,
+      "element_rate": 44.7,
+      "range_matches": 22,
+      "range_rate": 28.9,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 64,
+      "ghost_rate": 84.2,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Morning": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Midday": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Mid-Afternoon": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        }
+      }
+    },
+    "S10-Repeat": {
+      "hits": 5,
+      "total": 76,
+      "hit_rate": 6.6,
+      "reversal_hits": 7,
+      "reversal_rate": 9.2,
+      "mirror_hits": 5,
+      "mirror_rate": 6.6,
+      "root_matches": 26,
+      "root_rate": 34.2,
+      "element_matches": 35,
+      "element_rate": 46.1,
+      "range_matches": 24,
+      "range_rate": 31.6,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 57,
+      "ghost_rate": 75.0,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Midday": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        },
+        "Evening": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        }
+      }
+    },
+    "S16-Pairs": {
+      "hits": 4,
+      "total": 76,
+      "hit_rate": 5.3,
+      "reversal_hits": 4,
+      "reversal_rate": 5.3,
+      "mirror_hits": 4,
+      "mirror_rate": 5.3,
+      "root_matches": 21,
+      "root_rate": 27.6,
+      "element_matches": 30,
+      "element_rate": 39.5,
+      "range_matches": 23,
+      "range_rate": 30.3,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 51,
+      "ghost_rate": 67.1,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Morning": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Midday": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        }
+      }
+    },
+    "S18-Follower": {
+      "hits": 4,
+      "total": 76,
+      "hit_rate": 5.3,
+      "reversal_hits": 10,
+      "reversal_rate": 13.2,
+      "mirror_hits": 4,
+      "mirror_rate": 5.3,
+      "root_matches": 22,
+      "root_rate": 28.9,
+      "element_matches": 27,
+      "element_rate": 35.5,
+      "range_matches": 19,
+      "range_rate": 25.0,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 57,
+      "ghost_rate": 75.0,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Midday": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Mid-Afternoon": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Drivetime": {
+          "hits": 2,
+          "total": 12,
+          "rate": 16.7
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        }
+      }
+    },
+    "S20-SameDay": {
+      "hits": 6,
+      "total": 76,
+      "hit_rate": 7.9,
+      "reversal_hits": 5,
+      "reversal_rate": 6.6,
+      "mirror_hits": 6,
+      "mirror_rate": 7.9,
+      "root_matches": 25,
+      "root_rate": 32.9,
+      "element_matches": 41,
+      "element_rate": 53.9,
+      "range_matches": 24,
+      "range_rate": 31.6,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 59,
+      "ghost_rate": 77.6,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Midday": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Mid-Afternoon": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Drivetime": {
+          "hits": 2,
+          "total": 12,
+          "rate": 16.7
+        },
+        "Evening": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        }
+      }
+    },
+    "S23-Personal": {
+      "hits": 9,
+      "total": 76,
+      "hit_rate": 11.8,
+      "reversal_hits": 4,
+      "reversal_rate": 5.3,
+      "mirror_hits": 11,
+      "mirror_rate": 14.5,
+      "root_matches": 23,
+      "root_rate": 30.3,
+      "element_matches": 37,
+      "element_rate": 48.7,
+      "range_matches": 25,
+      "range_rate": 32.9,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 48,
+      "ghost_rate": 63.2,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 3,
+          "total": 13,
+          "rate": 23.1
+        },
+        "Morning": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Midday": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Mid-Afternoon": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Drivetime": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        }
+      }
+    },
+    "S24-MACross": {
+      "hits": 8,
+      "total": 76,
+      "hit_rate": 10.5,
+      "reversal_hits": 6,
+      "reversal_rate": 7.9,
+      "mirror_hits": 5,
+      "mirror_rate": 6.6,
+      "root_matches": 17,
+      "root_rate": 22.4,
+      "element_matches": 29,
+      "element_rate": 38.2,
+      "range_matches": 20,
+      "range_rate": 26.3,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 62,
+      "ghost_rate": 81.6,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Morning": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Midday": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 2,
+          "total": 12,
+          "rate": 16.7
+        },
+        "Evening": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        }
+      }
+    },
+    "S26-Range": {
+      "hits": 1,
+      "total": 76,
+      "hit_rate": 1.3,
+      "reversal_hits": 7,
+      "reversal_rate": 9.2,
+      "mirror_hits": 4,
+      "mirror_rate": 5.3,
+      "root_matches": 19,
+      "root_rate": 25.0,
+      "element_matches": 41,
+      "element_rate": 53.9,
+      "range_matches": 25,
+      "range_rate": 32.9,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 51,
+      "ghost_rate": 67.1,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Midday": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        }
+      }
+    },
+    "S28-Mirror": {
+      "hits": 7,
+      "total": 76,
+      "hit_rate": 9.2,
+      "reversal_hits": 6,
+      "reversal_rate": 7.9,
+      "mirror_hits": 9,
+      "mirror_rate": 11.8,
+      "root_matches": 21,
+      "root_rate": 27.6,
+      "element_matches": 37,
+      "element_rate": 48.7,
+      "range_matches": 25,
+      "range_rate": 32.9,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 63,
+      "ghost_rate": 82.9,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Morning": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Midday": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 3,
+          "total": 12,
+          "rate": 25.0
+        }
+      }
+    },
+    "S30-Monthly": {
+      "hits": 9,
+      "total": 76,
+      "hit_rate": 11.8,
+      "reversal_hits": 11,
+      "reversal_rate": 14.5,
+      "mirror_hits": 8,
+      "mirror_rate": 10.5,
+      "root_matches": 25,
+      "root_rate": 32.9,
+      "element_matches": 30,
+      "element_rate": 39.5,
+      "range_matches": 23,
+      "range_rate": 30.3,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 61,
+      "ghost_rate": 80.3,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Morning": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Midday": {
+          "hits": 3,
+          "total": 13,
+          "rate": 23.1
+        },
+        "Mid-Afternoon": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Drivetime": {
+          "hits": 2,
+          "total": 12,
+          "rate": 16.7
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        }
+      }
+    },
+    "S31-MultiStep": {
+      "hits": 5,
+      "total": 76,
+      "hit_rate": 6.6,
+      "reversal_hits": 10,
+      "reversal_rate": 13.2,
+      "mirror_hits": 6,
+      "mirror_rate": 7.9,
+      "root_matches": 24,
+      "root_rate": 31.6,
+      "element_matches": 38,
+      "element_rate": 50.0,
+      "range_matches": 20,
+      "range_rate": 26.3,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 50,
+      "ghost_rate": 65.8,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Morning": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Midday": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 2,
+          "total": 12,
+          "rate": 16.7
+        },
+        "Evening": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        }
+      }
+    },
+    "S34-DayPattern": {
+      "hits": 0,
+      "total": 76,
+      "hit_rate": 0.0,
+      "reversal_hits": 0,
+      "reversal_rate": 0.0,
+      "mirror_hits": 0,
+      "mirror_rate": 0.0,
+      "root_matches": 0,
+      "root_rate": 0.0,
+      "element_matches": 0,
+      "element_rate": 0.0,
+      "range_matches": 76,
+      "range_rate": 100.0,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 76,
+      "ghost_rate": 100.0,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Midday": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        }
+      }
+    },
+    "S35-MoonPhase": {
+      "hits": 0,
+      "total": 76,
+      "hit_rate": 0.0,
+      "reversal_hits": 0,
+      "reversal_rate": 0.0,
+      "mirror_hits": 0,
+      "mirror_rate": 0.0,
+      "root_matches": 0,
+      "root_rate": 0.0,
+      "element_matches": 0,
+      "element_rate": 0.0,
+      "range_matches": 76,
+      "range_rate": 100.0,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 76,
+      "ghost_rate": 100.0,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Midday": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        }
+      }
+    },
+    "S36-PlanetRuler": {
+      "hits": 0,
+      "total": 76,
+      "hit_rate": 0.0,
+      "reversal_hits": 0,
+      "reversal_rate": 0.0,
+      "mirror_hits": 0,
+      "mirror_rate": 0.0,
+      "root_matches": 0,
+      "root_rate": 0.0,
+      "element_matches": 0,
+      "element_rate": 0.0,
+      "range_matches": 76,
+      "range_rate": 100.0,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 76,
+      "ghost_rate": 100.0,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Midday": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        }
+      }
+    },
+    "D01-Element": {
+      "hits": 2,
+      "total": 76,
+      "hit_rate": 2.6,
+      "reversal_hits": 8,
+      "reversal_rate": 10.5,
+      "mirror_hits": 10,
+      "mirror_rate": 13.2,
+      "root_matches": 22,
+      "root_rate": 28.9,
+      "element_matches": 4,
+      "element_rate": 5.3,
+      "range_matches": 24,
+      "range_rate": 31.6,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 61,
+      "ghost_rate": 80.3,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Midday": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        }
+      }
+    },
+    "D02-Domain": {
+      "hits": 4,
+      "total": 76,
+      "hit_rate": 5.3,
+      "reversal_hits": 8,
+      "reversal_rate": 10.5,
+      "mirror_hits": 10,
+      "mirror_rate": 13.2,
+      "root_matches": 25,
+      "root_rate": 32.9,
+      "element_matches": 36,
+      "element_rate": 47.4,
+      "range_matches": 28,
+      "range_rate": 36.8,
+      "astro_matches": 8,
+      "astro_rate": 10.5,
+      "ghosts": 51,
+      "ghost_rate": 67.1,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Morning": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Midday": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Mid-Afternoon": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        }
+      }
+    }
+  },
+  "per_strategy_rankings": {
+    "S01-Freq": {
+      "most_common_top1": [
+        [
+          29,
+          42
+        ],
+        [
+          32,
+          34
+        ]
+      ],
+      "most_common_top3": [
+        [
+          32,
+          76
+        ],
+        [
+          5,
+          76
+        ],
+        [
+          29,
+          76
+        ]
+      ],
+      "most_common_overall": [
+        [
+          32,
+          76
+        ],
+        [
+          5,
+          76
+        ],
+        [
+          29,
+          76
+        ],
+        [
+          34,
+          76
+        ],
+        [
+          28,
+          76
+        ],
+        [
+          1,
+          76
+        ],
+        [
+          20,
+          76
+        ],
+        [
+          26,
+          76
+        ],
+        [
+          4,
+          76
+        ],
+        [
+          7,
+          76
+        ]
+      ]
+    },
+    "S02-Cold": {
+      "most_common_top1": [
+        [
+          24,
+          70
+        ],
+        [
+          9,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          9,
+          76
+        ],
+        [
+          24,
+          76
+        ],
+        [
+          12,
+          52
+        ],
+        [
+          25,
+          24
+        ]
+      ],
+      "most_common_overall": [
+        [
+          9,
+          76
+        ],
+        [
+          24,
+          76
+        ],
+        [
+          25,
+          76
+        ],
+        [
+          16,
+          76
+        ],
+        [
+          8,
+          76
+        ],
+        [
+          10,
+          76
+        ],
+        [
+          12,
+          76
+        ],
+        [
+          11,
+          76
+        ],
+        [
+          14,
+          76
+        ],
+        [
+          15,
+          76
+        ]
+      ]
+    },
+    "S03-HotStreak": {
+      "most_common_top1": [
+        [
+          2,
+          18
+        ],
+        [
+          21,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          20,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          1,
+          24
+        ],
+        [
+          2,
+          24
+        ],
+        [
+          6,
+          22
+        ],
+        [
+          4,
+          18
+        ],
+        [
+          10,
+          18
+        ]
+      ],
+      "most_common_overall": [
+        [
+          16,
+          40
+        ],
+        [
+          29,
+          36
+        ],
+        [
+          17,
+          36
+        ],
+        [
+          31,
+          36
+        ],
+        [
+          20,
+          36
+        ],
+        [
+          25,
+          30
+        ],
+        [
+          35,
+          30
+        ],
+        [
+          11,
+          30
+        ],
+        [
+          21,
+          28
+        ],
+        [
+          6,
+          28
+        ]
+      ]
+    },
+    "S04-ColdStreak": {
+      "most_common_top1": [
+        [
+          2,
+          34
+        ],
+        [
+          3,
+          24
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          3,
+          58
+        ],
+        [
+          2,
+          40
+        ],
+        [
+          7,
+          36
+        ],
+        [
+          11,
+          24
+        ],
+        [
+          5,
+          18
+        ]
+      ],
+      "most_common_overall": [
+        [
+          12,
+          76
+        ],
+        [
+          19,
+          76
+        ],
+        [
+          23,
+          76
+        ],
+        [
+          13,
+          70
+        ],
+        [
+          24,
+          64
+        ],
+        [
+          3,
+          58
+        ],
+        [
+          33,
+          52
+        ],
+        [
+          7,
+          52
+        ],
+        [
+          14,
+          48
+        ],
+        [
+          22,
+          42
+        ]
+      ]
+    },
+    "S05-Momentum": {
+      "most_common_top1": [
+        [
+          3,
+          18
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          25,
+          10
+        ],
+        [
+          10,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          25,
+          28
+        ],
+        [
+          10,
+          24
+        ],
+        [
+          3,
+          18
+        ],
+        [
+          18,
+          18
+        ],
+        [
+          11,
+          18
+        ]
+      ],
+      "most_common_overall": [
+        [
+          34,
+          48
+        ],
+        [
+          31,
+          46
+        ],
+        [
+          27,
+          46
+        ],
+        [
+          26,
+          42
+        ],
+        [
+          29,
+          42
+        ],
+        [
+          2,
+          36
+        ],
+        [
+          4,
+          36
+        ],
+        [
+          11,
+          36
+        ],
+        [
+          15,
+          34
+        ],
+        [
+          22,
+          34
+        ]
+      ]
+    },
+    "S07-Gap": {
+      "most_common_top1": [
+        [
+          19,
+          70
+        ],
+        [
+          15,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          19,
+          76
+        ],
+        [
+          12,
+          46
+        ],
+        [
+          23,
+          42
+        ],
+        [
+          27,
+          24
+        ],
+        [
+          18,
+          18
+        ]
+      ],
+      "most_common_overall": [
+        [
+          19,
+          76
+        ],
+        [
+          12,
+          76
+        ],
+        [
+          23,
+          76
+        ],
+        [
+          13,
+          76
+        ],
+        [
+          24,
+          64
+        ],
+        [
+          3,
+          64
+        ],
+        [
+          7,
+          64
+        ],
+        [
+          14,
+          58
+        ],
+        [
+          33,
+          58
+        ],
+        [
+          22,
+          54
+        ]
+      ]
+    },
+    "S09-Cycle": {
+      "most_common_top1": [
+        [
+          36,
+          12
+        ],
+        [
+          30,
+          12
+        ],
+        [
+          20,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          13,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          36,
+          24
+        ],
+        [
+          30,
+          18
+        ],
+        [
+          1,
+          18
+        ],
+        [
+          34,
+          18
+        ],
+        [
+          14,
+          18
+        ]
+      ],
+      "most_common_overall": [
+        [
+          36,
+          30
+        ],
+        [
+          1,
+          30
+        ],
+        [
+          4,
+          28
+        ],
+        [
+          30,
+          24
+        ],
+        [
+          8,
+          24
+        ],
+        [
+          28,
+          24
+        ],
+        [
+          34,
+          24
+        ],
+        [
+          14,
+          24
+        ],
+        [
+          26,
+          18
+        ],
+        [
+          13,
+          18
+        ]
+      ]
+    },
+    "S10-Repeat": {
+      "most_common_top1": [
+        [
+          5,
+          76
+        ]
+      ],
+      "most_common_top3": [
+        [
+          5,
+          76
+        ],
+        [
+          22,
+          76
+        ],
+        [
+          29,
+          76
+        ]
+      ],
+      "most_common_overall": [
+        [
+          5,
+          76
+        ],
+        [
+          22,
+          76
+        ],
+        [
+          29,
+          76
+        ],
+        [
+          1,
+          76
+        ],
+        [
+          15,
+          76
+        ],
+        [
+          14,
+          76
+        ],
+        [
+          35,
+          76
+        ],
+        [
+          20,
+          76
+        ],
+        [
+          3,
+          76
+        ],
+        [
+          21,
+          76
+        ]
+      ]
+    },
+    "S16-Pairs": {
+      "most_common_top1": [
+        [
+          15,
+          70
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          5,
+          76
+        ],
+        [
+          15,
+          70
+        ],
+        [
+          25,
+          70
+        ],
+        [
+          34,
+          6
+        ],
+        [
+          18,
+          6
+        ]
+      ],
+      "most_common_overall": [
+        [
+          5,
+          76
+        ],
+        [
+          34,
+          76
+        ],
+        [
+          18,
+          76
+        ],
+        [
+          20,
+          76
+        ],
+        [
+          19,
+          76
+        ],
+        [
+          32,
+          76
+        ],
+        [
+          13,
+          76
+        ],
+        [
+          4,
+          76
+        ],
+        [
+          29,
+          76
+        ],
+        [
+          3,
+          76
+        ]
+      ]
+    },
+    "S18-Follower": {
+      "most_common_top1": [
+        [
+          29,
+          16
+        ],
+        [
+          17,
+          12
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          33,
+          6
+        ],
+        [
+          19,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          29,
+          28
+        ],
+        [
+          28,
+          18
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          35,
+          12
+        ]
+      ],
+      "most_common_overall": [
+        [
+          30,
+          36
+        ],
+        [
+          7,
+          34
+        ],
+        [
+          17,
+          30
+        ],
+        [
+          35,
+          30
+        ],
+        [
+          29,
+          28
+        ],
+        [
+          20,
+          28
+        ],
+        [
+          1,
+          24
+        ],
+        [
+          5,
+          22
+        ],
+        [
+          21,
+          18
+        ],
+        [
+          6,
+          18
+        ]
+      ]
+    },
+    "S20-SameDay": {
+      "most_common_top1": [
+        [
+          4,
+          76
+        ]
+      ],
+      "most_common_top3": [
+        [
+          4,
+          76
+        ],
+        [
+          5,
+          76
+        ],
+        [
+          20,
+          58
+        ],
+        [
+          3,
+          18
+        ]
+      ],
+      "most_common_overall": [
+        [
+          4,
+          76
+        ],
+        [
+          5,
+          76
+        ],
+        [
+          3,
+          76
+        ],
+        [
+          32,
+          76
+        ],
+        [
+          22,
+          76
+        ],
+        [
+          1,
+          76
+        ],
+        [
+          15,
+          76
+        ],
+        [
+          14,
+          76
+        ],
+        [
+          20,
+          76
+        ],
+        [
+          35,
+          52
+        ]
+      ]
+    },
+    "S23-Personal": {
+      "most_common_top1": [
+        [
+          15,
+          34
+        ],
+        [
+          26,
+          30
+        ],
+        [
+          20,
+          6
+        ],
+        [
+          32,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          26,
+          70
+        ],
+        [
+          13,
+          36
+        ],
+        [
+          15,
+          34
+        ],
+        [
+          31,
+          28
+        ],
+        [
+          20,
+          18
+        ]
+      ],
+      "most_common_overall": [
+        [
+          26,
+          76
+        ],
+        [
+          14,
+          76
+        ],
+        [
+          13,
+          76
+        ],
+        [
+          19,
+          76
+        ],
+        [
+          12,
+          76
+        ],
+        [
+          32,
+          76
+        ],
+        [
+          2,
+          58
+        ],
+        [
+          22,
+          58
+        ],
+        [
+          28,
+          52
+        ],
+        [
+          5,
+          46
+        ]
+      ]
+    },
+    "S24-MACross": {
+      "most_common_top1": [
+        [
+          9,
+          12
+        ],
+        [
+          21,
+          6
+        ],
+        [
+          25,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          20,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          21,
+          18
+        ],
+        [
+          9,
+          18
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          10,
+          12
+        ]
+      ],
+      "most_common_overall": [
+        [
+          29,
+          30
+        ],
+        [
+          16,
+          30
+        ],
+        [
+          31,
+          30
+        ],
+        [
+          21,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          35,
+          24
+        ],
+        [
+          17,
+          24
+        ],
+        [
+          11,
+          24
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          9,
+          18
+        ]
+      ]
+    },
+    "S26-Range": {
+      "most_common_top1": [
+        [
+          13,
+          60
+        ],
+        [
+          1,
+          16
+        ]
+      ],
+      "most_common_top3": [
+        [
+          13,
+          60
+        ],
+        [
+          14,
+          60
+        ],
+        [
+          15,
+          60
+        ],
+        [
+          1,
+          16
+        ],
+        [
+          2,
+          16
+        ]
+      ],
+      "most_common_overall": [
+        [
+          13,
+          60
+        ],
+        [
+          14,
+          60
+        ],
+        [
+          15,
+          60
+        ],
+        [
+          16,
+          60
+        ],
+        [
+          17,
+          60
+        ],
+        [
+          18,
+          60
+        ],
+        [
+          19,
+          60
+        ],
+        [
+          20,
+          60
+        ],
+        [
+          21,
+          60
+        ],
+        [
+          22,
+          60
+        ]
+      ]
+    },
+    "S28-Mirror": {
+      "most_common_top1": [
+        [
+          2,
+          18
+        ],
+        [
+          36,
+          18
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          33,
+          6
+        ],
+        [
+          35,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          3,
+          28
+        ],
+        [
+          2,
+          24
+        ],
+        [
+          33,
+          18
+        ],
+        [
+          36,
+          18
+        ],
+        [
+          35,
+          18
+        ]
+      ],
+      "most_common_overall": [
+        [
+          12,
+          30
+        ],
+        [
+          6,
+          30
+        ],
+        [
+          26,
+          30
+        ],
+        [
+          3,
+          28
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          27,
+          24
+        ],
+        [
+          8,
+          24
+        ],
+        [
+          2,
+          24
+        ],
+        [
+          22,
+          24
+        ],
+        [
+          31,
+          22
+        ]
+      ]
+    },
+    "S30-Monthly": {
+      "most_common_top1": [
+        [
+          16,
+          64
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          10,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          16,
+          76
+        ],
+        [
+          10,
+          64
+        ],
+        [
+          9,
+          34
+        ],
+        [
+          24,
+          30
+        ],
+        [
+          4,
+          12
+        ]
+      ],
+      "most_common_overall": [
+        [
+          16,
+          76
+        ],
+        [
+          24,
+          76
+        ],
+        [
+          10,
+          76
+        ],
+        [
+          9,
+          70
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          27,
+          12
+        ],
+        [
+          25,
+          6
+        ]
+      ]
+    },
+    "S31-MultiStep": {
+      "most_common_top1": [
+        [
+          21,
+          28
+        ],
+        [
+          7,
+          18
+        ],
+        [
+          25,
+          18
+        ],
+        [
+          27,
+          12
+        ]
+      ],
+      "most_common_top3": [
+        [
+          21,
+          46
+        ],
+        [
+          25,
+          34
+        ],
+        [
+          27,
+          24
+        ],
+        [
+          7,
+          22
+        ],
+        [
+          5,
+          18
+        ]
+      ],
+      "most_common_overall": [
+        [
+          21,
+          64
+        ],
+        [
+          25,
+          64
+        ],
+        [
+          15,
+          58
+        ],
+        [
+          20,
+          58
+        ],
+        [
+          17,
+          52
+        ],
+        [
+          35,
+          52
+        ],
+        [
+          10,
+          48
+        ],
+        [
+          9,
+          46
+        ],
+        [
+          16,
+          40
+        ],
+        [
+          6,
+          40
+        ]
+      ]
+    },
+    "D01-Element": {
+      "most_common_top1": [
+        [
+          6,
+          70
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "most_common_top3": [
+        [
+          6,
+          70
+        ],
+        [
+          13,
+          70
+        ],
+        [
+          19,
+          70
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          11,
+          6
+        ]
+      ],
+      "most_common_overall": [
+        [
+          6,
+          76
+        ],
+        [
+          13,
+          76
+        ],
+        [
+          19,
+          76
+        ],
+        [
+          32,
+          76
+        ],
+        [
+          2,
+          28
+        ],
+        [
+          11,
+          28
+        ],
+        [
+          18,
+          28
+        ],
+        [
+          21,
+          28
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          5,
+          18
+        ]
+      ]
+    },
+    "D02-Domain": {
+      "most_common_top1": [
+        [
+          7,
+          54
+        ],
+        [
+          17,
+          12
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          15,
+          4
+        ]
+      ],
+      "most_common_top3": [
+        [
+          7,
+          54
+        ],
+        [
+          12,
+          48
+        ],
+        [
+          13,
+          48
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          36,
+          16
+        ]
+      ],
+      "most_common_overall": [
+        [
+          12,
+          70
+        ],
+        [
+          19,
+          64
+        ],
+        [
+          7,
+          54
+        ],
+        [
+          13,
+          48
+        ],
+        [
+          18,
+          48
+        ],
+        [
+          23,
+          48
+        ],
+        [
+          4,
+          46
+        ],
+        [
+          26,
+          46
+        ],
+        [
+          17,
+          40
+        ],
+        [
+          32,
+          40
+        ]
+      ]
+    }
+  }
+}

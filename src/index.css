@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #080B18;
+  --color-surface: rgba(255,255,255,0.04);
+  --color-border: rgba(255,255,255,0.08);
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  background-color: #080B18;
+  color: #f1f5f9;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.glass {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 1rem;
+}
+
+.ball-main {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(99,102,241,0.12);
+  border: 2px solid #6366f1;
+  box-shadow: 0 0 24px rgba(99,102,241,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.ball-reversal {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.nav-pill {
+  padding: 0.375rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: 1px solid transparent;
+}
+
+.nav-pill.active {
+  background: rgba(99,102,241,0.2);
+  border-color: rgba(99,102,241,0.4);
+  color: #a5b4fc;
+}
+
+.nav-pill:not(.active) {
+  color: #64748b;
+}
+
+.nav-pill:not(.active):hover {
+  color: #94a3b8;
+}
+
+.strategy-pill {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: transparent;
+  color: #64748b;
+  transition: all 0.15s;
+}
+
+.strategy-pill.active {
+  background: rgba(99,102,241,0.15);
+  border-color: rgba(99,102,241,0.35);
+  color: #a5b4fc;
+}
+
+/* ── Strategy Dashboard ── */
+.strategy-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: border-color 0.15s;
+  cursor: pointer;
+}
+.strategy-card:hover { border-color: rgba(255,255,255,0.12); }
+.strategy-card.hot { border-left: 3px solid #22c55e; }
+.strategy-card.cold { border-left: 3px solid #ef4444; }
+.strategy-card.neutral { border-left: 3px solid transparent; }
+
+.filter-chip {
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: transparent;
+  color: #64748b;
+  transition: all 0.15s;
+}
+.filter-chip.active { background: rgba(99,102,241,0.12); }
+.filter-chip:hover { color: #94a3b8; }
+
+.streak-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  display: inline-block;
+}
+.streak-dot.hot { background: #22c55e; box-shadow: 0 0 6px rgba(34,197,94,0.4); }
+.streak-dot.cold { background: #ef4444; box-shadow: 0 0 6px rgba(239,68,68,0.4); }
+.streak-dot.neutral { background: #64748b; }
+
+.range-bar { background: rgba(255,255,255,0.03); }
+.range-bar-low { background: #6366f1; }
+.range-bar-mid { background: #f59e0b; }
+.range-bar-high { background: #ef4444; }
+
+/* ── Forecast ── */
+.forecast-card { min-width: 144px; transition: opacity 0.3s; }
+.forecast-card.far { opacity: 0.6; }
+.forecast-card.far:hover { opacity: 0.85; }
+
+/* ── Accuracy ring ── */
+.accuracy-ring-svg { transform: rotate(-90deg); }

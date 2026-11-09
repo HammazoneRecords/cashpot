@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env*
+!.env.example
+package-lock.json
+python/cash_pot_results.json
+__pycache__/
+*.pyc

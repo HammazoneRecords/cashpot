@@ -1,0 +1,231 @@
+{
+  "config": {
+    "start_date": "2025-01-01",
+    "end_date": "2025-01-30",
+    "test_dates": 14,
+    "total_slots_1d": 76,
+    "total_slots_2d": 70,
+    "warmup_draws": 100,
+    "lookback": "all",
+    "runtime_seconds": 0.2
+  },
+  "engine_combined": {
+    "one_day": {
+      "hits": 3,
+      "total": 76,
+      "hit_rate": 3.9,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Morning": {
+          "hits": 2,
+          "total": 13,
+          "rate": 15.4
+        },
+        "Midday": {
+          "hits": 1,
+          "total": 13,
+          "rate": 7.7
+        },
+        "Mid-Afternoon": {
+          "hits": 0,
+          "total": 13,
+          "rate": 0.0
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 12,
+          "rate": 0.0
+        }
+      }
+    },
+    "two_day": {
+      "hits": 3,
+      "total": 70,
+      "hit_rate": 4.3,
+      "by_slot": {
+        "Early Bird": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        },
+        "Morning": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        },
+        "Midday": {
+          "hits": 2,
+          "total": 12,
+          "rate": 16.7
+        },
+        "Mid-Afternoon": {
+          "hits": 1,
+          "total": 12,
+          "rate": 8.3
+        },
+        "Drivetime": {
+          "hits": 0,
+          "total": 11,
+          "rate": 0.0
+        },
+        "Evening": {
+          "hits": 0,
+          "total": 11,
+          "rate": 0.0
+        }
+      }
+    },
+    "reversal": {
+      "hits": 8,
+      "total": 76,
+      "hit_rate": 10.5
+    },
+    "mirror": {
+      "hits": 9,
+      "total": 76,
+      "hit_rate": 11.8
+    },
+    "root_match": {
+      "hits": 15,
+      "total": 76,
+      "hit_rate": 19.7
+    },
+    "element_match": {
+      "hits": 22,
+      "rate": 28.9
+    },
+    "range_match": {
+      "hits": 25,
+      "rate": 32.9
+    },
+    "astro_match": {
+      "hits": 8,
+      "rate": 10.5
+    },
+    "ghost": {
+      "count": 0,
+      "rate": 0.0
+    }
+  },
+  "per_strategy_standalone": {
+    "S01-Freq": {
+      "hits": 6,
+      "total": 76,
+      "hit_rate": 7.9
+    },
+    "S02-Cold": {
+      "hits": 8,
+      "total": 76,
+      "hit_rate": 10.5
+    },
+    "S03-HotStreak": {
+      "hits": 4,
+      "total": 76,
+      "hit_rate": 5.3
+    },
+    "S04-ColdStreak": {
+      "hits": 4,
+      "total": 76,
+      "hit_rate": 5.3
+    },
+    "S05-Momentum": {
+      "hits": 5,
+      "total": 76,
+      "hit_rate": 6.6
+    },
+    "S07-Gap": {
+      "hits": 3,
+      "total": 76,
+      "hit_rate": 3.9
+    },
+    "S09-Cycle": {
+      "hits": 4,
+      "total": 76,
+      "hit_rate": 5.3
+    },
+    "S10-Repeat": {
+      "hits": 5,
+      "total": 76,
+      "hit_rate": 6.6
+    },
+    "S16-Pairs": {
+      "hits": 4,
+      "total": 76,
+      "hit_rate": 5.3
+    },
+    "S18-Follower": {
+      "hits": 4,
+      "total": 76,
+      "hit_rate": 5.3
+    },
+    "S20-SameDay": {
+      "hits": 6,
+      "total": 76,
+      "hit_rate": 7.9
+    },
+    "S23-Personal": {
+      "hits": 9,
+      "total": 76,
+      "hit_rate": 11.8
+    },
+    "S24-MACross": {
+      "hits": 8,
+      "total": 76,
+      "hit_rate": 10.5
+    },
+    "S26-Range": {
+      "hits": 1,
+      "total": 76,
+      "hit_rate": 1.3
+    },
+    "S28-Mirror": {
+      "hits": 7,
+      "total": 76,
+      "hit_rate": 9.2
+    },
+    "S30-Monthly": {
+      "hits": 9,
+      "total": 76,
+      "hit_rate": 11.8
+    },
+    "S31-MultiStep": {
+      "hits": 5,
+      "total": 76,
+      "hit_rate": 6.6
+    },
+    "S34-DayPattern": {
+      "hits": 0,
+      "total": 76,
+      "hit_rate": 0.0
+    },
+    "S35-MoonPhase": {
+      "hits": 0,
+      "total": 76,
+      "hit_rate": 0.0
+    },
+    "S36-PlanetRuler": {
+      "hits": 0,
+      "total": 76,
+      "hit_rate": 0.0
+    },
+    "D01-Element": {
+      "hits": 2,
+      "total": 76,
+      "hit_rate": 2.6
+    },
+    "D02-Domain": {
+      "hits": 4,
+      "total": 76,
+      "hit_rate": 5.3
+    }
+  }
+}
